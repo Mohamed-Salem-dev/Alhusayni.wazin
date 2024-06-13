@@ -1,0 +1,91 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"); */
+
+@font-face {
+  font-family: "font-dinar"; /* الكبير */
+  src: url(../Fonts/GE_Dinar_Two_Light-1.otf);
+}
+
+@font-face {
+  font-family: "font-lina"; /* الصغير */
+  src: url(../Fonts/linasoftpersonal-Thin_1.otf);
+}
+
+html {
+}
+body {
+  direction: rtl;
+  text-align: right;
+
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "font-dinar" !important;
+}
+a,
+span,
+ul,
+li,
+p {
+  font-family: "font-lina" !important; /* الصغير */
+}
+/* =========================================================================================================== */
+
+.navbar-collapse-items ul {
+  transform: translateX(12%);
+}
+.box-section-3-About {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.box-slider-CLIENTS .owl-carousel .owl-nav button span {
+  transform: rotate(180deg);
+}
+input[type="email"] {
+  /* background-color: aquamarine !important; */
+  /* direction: ltr; */
+}
+.box-Career-section h2::after {
+  right: 0;
+}
+
+.box-text-header h3 {
+  letter-spacing:normal;
+
+}
+
+
+@media screen and (max-width: 1199px) {
+  .navbar-collapse-items ul {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-collapse-items ul {
+    background-color: #232937;
+    width: 300px;
+    position: absolute;
+    top: 101%;
+    flex-direction: column;
+    height: 88vh;
+    gap: 30px;
+    justify-content: flex-start;
+    padding-top: 48px;
+    left: -100%;
+    transition: all 1s;
+    right: auto;
+  }
+  .navbar-collapse-items ul.open {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: auto;
+  }
+}
